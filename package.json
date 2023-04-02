@@ -5,6 +5,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "node": "^18.15.0",
     "vite": "^4.2.1"
   }
 }
