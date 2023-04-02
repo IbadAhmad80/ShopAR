@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>ShopAR</title>
-      <script src="qrcode.min.js"></script>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
   </head>
   <body>
     <header>
@@ -21,110 +20,127 @@
       </nav>
     </header>
     <main>
-      <div class="d-flex justify-content-around" style="margin-top: 50px;">
-        <div class="p-2 bd-highlight" >
-          <div class="card" style="width: 18rem;">
-            <div id="carouselBedControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="assets/images/bed.png" class="d-block w-100" alt="Bed" style="max-height: 140px;">
+      <div class="container" style="margin: 8% 5% 5% 8%;">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem; margin-bottom: 15%;">
+              <div id="carouselBedControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/images/bed.png" class="d-block w-100" alt="Bed" style="max-height: 140px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/bed-side-look.png" class="d-block w-100" alt="Bed side look" style="max-height: 140px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/bed-front-look.png" class="d-block w-100" alt="Bed front look" style="max-height: 140px;">
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="assets/images/bed-side-look.png" class="d-block w-100" alt="Bed side look" style="max-height: 140px;">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/bed-front-look.png" class="d-block w-100" alt="Bed front look" style="max-height: 140px;">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBedControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBedControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBedControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+              <div class="card-body">
+                <h5 class="card-title">Bed</h5>
+                <p class="card-text">Upgrade your sleeping experience with our premium beds at unbeatable prices.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: 28,320</li>
+              </ul>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#bedModal">
+                View QR
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselBedControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+              <button class="btn btn-dark">
+                <a href="https://www.daraz.pk/products/iron-bunk-bed-frame-heavy-weight-double-dacker-bed-i342699675-s1762303106.html?spm=a2a0e.searchlist.list.71.71a843ccoj3nqV&search=1" target="_blank" style="text-decoration: none; color: white;">
+                  Purchase
+                </a>
               </button>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Bed</h5>
-              <p class="card-text">Upgrade your sleeping experience with our premium beds at unbeatable prices.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Price: 20,000</li>
-            </ul>
-             <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#bedModal">
-              View QR
-            </button>
           </div>
-        </div>
-        <div class="p-2 bd-highlight" >
-          <div class="card" style="width: 18rem;">
-            <div id="carouselChairControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="assets/images/chair.png" class="d-block w-100" alt="Chair" style="max-height: 140px;">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem; margin-bottom: 15%;">
+              <div id="carouselChairControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/images/chair.png" class="d-block w-100" alt="Chair" style="max-height: 140px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/chair-side-look.png" class="d-block w-100" alt="Chair side look" style="max-height: 140px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/gaming-chair.png" class="d-block w-100" alt="Gaming front look" style="max-height: 140px;">
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="assets/images/chair-side-look.png" class="d-block w-100" alt="Chair side look" style="max-height: 140px;">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/gaming-chair.png" class="d-block w-100" alt="Gaming front look" style="max-height: 140px;">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselChairControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselChairControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselChairControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+              <div class="card-body">
+                <h5 class="card-title">Chair</h5>
+                <p class="card-text">Sit back, relax, and save big with our chair, a perfect addition to any room.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: 29,990</li>
+              </ul>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#chairModal">
+                View QR
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselChairControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+              <button class="btn btn-dark">
+                <a href="https://www.daraz.pk/products/axotic-global-razerr-gaming-chair-guaranteed-best-gaming-chair-in-pakistan-leather-axotic-i352173393-s1784208088.html?spm=a2a0e.searchlist.list.1.4380169dccEVIL&search=1" target="_blank" style="text-decoration: none; color: white;">
+                  Purchase
+                </a>
               </button>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Chair</h5>
-              <p class="card-text">Sit back, relax, and save big with our chair, a perfect addition to any room.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Price: 8000</li>
-            </ul>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#chairModal">
-              View QR
-            </button>
           </div>
-        </div>
-        <div class="p-2 bd-highlight" >
-          <div class="card" style="width: 18rem;">
-            <div id="carouselBoxControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="assets/images/box.png" class="d-block w-100" alt="Box" style="max-height: 140px;">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem; margin-bottom: 15%;">
+              <div id="carouselBoxControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/images/box.png" class="d-block w-100" alt="Box" style="max-height: 140px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/another-box.png" class="d-block w-100" alt="Another box" style="max-height: 140px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/filled-box.png" class="d-block w-100" alt="Box filled with chair" style="max-height: 140px;">
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="assets/images/another-box.png" class="d-block w-100" alt="Another box" style="max-height: 140px;">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/filled-box.png" class="d-block w-100" alt="Box filled with chair" style="max-height: 140px;">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBoxControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBoxControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBoxControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+              <div class="card-body">
+                <h5 class="card-title">Box</h5>
+                <p class="card-text">Organize your life one box at a time, find the perfect storage solution with our box.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: 800</li>
+              </ul>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#boxModal">
+                View QR
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselBoxControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+              <button class="btn btn-dark">
+                <a href="https://www.daraz.pk/products/20-28195135-i103490577-s1249650372.html?spm=a2a0e.searchlist.list.7.5484240dmMDDlg&search=1" target="_blank" style="text-decoration: none; color: white;">
+                  Purchase
+                </a>
               </button>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Box</h5>
-              <p class="card-text">Organize your life one box at a time, find the perfect storage solution with our box.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Price: 500</li>
-            </ul>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#boxModal">
-              View QR
-            </button>
           </div>
         </div>
       </div>
@@ -138,7 +154,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <canvas id="bedQRCode"  width="200" height="200"></canvas>
+              <img src="assets/images/bed-qr.jpeg" class="d-block w-100" alt="Bed QR">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -151,11 +167,11 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Scan QR for Chair Moda</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Scan QR for Chair Modal</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <canvas id="chairQRCode"  width="200" height="200"></canvas>
+              <img src="assets/images/chair-qr.jpeg" class="d-block w-100" alt="Chair QR">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -172,7 +188,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <canvas id="boxQRCode"  width="200" height="200"></canvas>
+              <img src="assets/images/box-qr.jpeg" class="d-block w-100" alt="Box QR">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -183,11 +199,5 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="bootstrap.min.js"></script>
-    <script>
-      new QRCode(document.getElementById("bedQRCode"), "https://www.example.com");
-      new QRCode(document.getElementById("chairQRCode"), "https://www.example.com");
-      new QRCode(document.getElementById("boxQRCode"), "https://www.example.com");
-    </script>
   </body>
 </html>
-
